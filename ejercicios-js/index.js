@@ -1,38 +1,48 @@
 //ejercicio 1
 function diasDeLaSemana(a){
 
-    switch (a) {
-        case 1:
-        console.log("lunes")
-            break;
-        case 2:
-            console.log("martes")
-            break;
-        case 3:
-            console.log("miercoles")
-            break;
-        case 4:
-            console.log("jueves")
-            break;
-        case 5:
-            console.log("viernes")
-            break;
-        case 6:
-            console.log("sabado")
-            break;
-        case 7:
-            console.log("domingo")
-            break;
-        default:
-            console.log("No es un dia válido")
-        break;
-        }
+    // switch (a) {
+    //     case 1:
+    //     console.log("lunes")
+    //         break;
+    //     case 2:
+    //         console.log("martes")
+    //         break;
+    //     case 3:
+    //         console.log("miercoles")
+    //         break;
+    //     case 4:
+    //         console.log("jueves")
+    //         break;
+    //     case 5:
+    //         console.log("viernes")
+    //         break;
+    //     case 6:
+    //         console.log("sabado")
+    //         break;
+    //     case 7:
+    //         console.log("domingo")
+    //         break;
+    //     default:
+    //         console.log("No es un dia válido")
+    //     break;
+    //     }
+
+
+    const dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+
+    if(a>0 && a<=7) {
+        console.log(dias[a-1])
+    } else {
+        console.log("no es valido")
+    }
+ 
 }
 
-// diasDeLaSemana(3)
-// diasDeLaSemana(6)
-// diasDeLaSemana(1)
-// diasDeLaSemana(8)
+diasDeLaSemana(3)
+diasDeLaSemana(6)
+diasDeLaSemana(1)
+diasDeLaSemana(7)
 
 //ejercicio 2
 
