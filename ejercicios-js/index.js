@@ -36,13 +36,13 @@ function diasDeLaSemana(a){
     } else {
         console.log("no es valido")
     }
- 
+  
 }
 
-diasDeLaSemana(3)
-diasDeLaSemana(6)
-diasDeLaSemana(1)
-diasDeLaSemana(7)
+// diasDeLaSemana(3)
+// diasDeLaSemana(6)
+// diasDeLaSemana(1)
+// diasDeLaSemana(7)
 
 //ejercicio 2
 
@@ -144,12 +144,17 @@ for(let i=1; i<=10; i++){
 // ejercicio 7
 
 function imprimirNumeros(num){
-    for(let i = 0; i<=num; i++){
-        console.log(i)
+
+    if(num >=0 ){
+        for(let i = 0; i<=num; i++){
+            console.log(i)
+        }
+    } else {
+        console.log("no es valido")
     }
 }
 
-// imprimirNumeros(4)
+// imprimirNumeros(8)
 
 // ejercicio 8 
 

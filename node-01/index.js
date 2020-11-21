@@ -19,8 +19,13 @@ const series = {
     serie04: "brooklyn 99",
 }
 
-console.log(series)
-console.log(series.serie01)
-console.log(series.serie02)
-console.log(series.serie03)
-console.log(series.serie04)
+// console.log(series)
+// console.log(series.serie01)
+// console.log(series.serie02)
+// console.log(series.serie03)
+// console.log(series.serie04)
+
+for (peli in series) {
+    console.log(`clave: ${peli}` )
+    console.log(`valor: ${series[peli]}` )
+}
