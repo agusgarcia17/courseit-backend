@@ -237,3 +237,5 @@ function fizzBuzz(num){
 // fizzBuzz(3)
 // fizzBuzz(5)
 // fizzBuzz(15)
+
+console.log(process.argv)
