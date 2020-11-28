@@ -151,11 +151,48 @@ function noRepetido(arr){
         unicos.push(sorted[i]);
       }
     }
-    const newSet = [...new Set(unicos)];
-    return newSet;
+    
+    return unicos;
 }
 
-// console.log(noRepetido([1,2,3,2,3,4,1] ))
+// console.log(noRepetido([-1, 'a', 'b', 'a', 0]))
+
+// function findDuplicates(arr) {
+//   const items = []
+//   const dup = [] 
+  
+//   for (let i = 0; i < arr.length; i++) {
+//     const actual = arr[i]
+//     if (items.includes(actual) && !dup.includes(actual)) {
+//       dup.push(actual)
+//     } else {
+//       items.push(actual)
+//     }
+//   } 
+ 
+//   return dup
+// }
+
+
+function unique(arr) { 
+  
+  let unicos = []
+
+  for(let i=0; i<arr.length; i++){
+  
+  let newArr = [...arr]
+  
+  newArr.splice(i, 1)
+    
+    if(!newArr.includes(arr[i])){
+       
+       unicos.push(arr[i])
+  }
+  } 
+  return unicos
+}
+
+console.log(unique([-1, 'a', 'b', 'a', 0]))
 
 
 /*
@@ -201,4 +238,4 @@ function palindrome(str){
 
 }
 
-console.log(palindrome('sugus'))
+// console.log(palindrome('sugus'))
