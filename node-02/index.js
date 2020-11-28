@@ -1,11 +1,10 @@
 const fs = require("fs")
-const persona = require("./persona")
+const data = require("./data")
 var catMe = require('cat-me')
-
 
 console.log("Primer console.log")
 
-let mensaje = `Hola, soy ${persona.name} y tengo ${persona.age} anios`
+let mensaje = `Hola, soy ${data.persona.name} y tengo ${data.persona.age} anios`
 
 console.log(mensaje)
 
